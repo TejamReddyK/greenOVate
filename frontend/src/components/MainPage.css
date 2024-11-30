@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f4; /* Light greenish background for eco-friendly feel */
+    color: #2e2e2e; /* Dark grey text for better readability */
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Navigation Bar */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a7f49; /* Deep green to symbolize sustainability */
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .navigation ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .navigation li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* White text for contrast */
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation li:hover {
+    background-color: #2e6e34; /* Slightly darker green on hover */
+  }
+
+  .navigation li.active {
+    background-color: #29632F;
+    color: white;
+    font-weight: bold;
+  }
+
+  
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff; /* Clean, white background for the content */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .tech{
+    margin-top: 10px;
+  }
+
+  .tech ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /* Button Style (For Logout, etc.) */
+  button {
+    background-color: #2d8731; /* Green button for logout */
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #246d28; /* Darker green on hover */
+  }
+  
+  /* Component Styling (Dashboard, Summary, Results) */
+  .dashboard, .summary, .results {
+    background-color: #eef9e6; /* Light, soft green background for sections */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* General Typography */
+  h1, h2, h3, h4 {
+    display: flex;
+    justify-content: center;
+    color: #2e6e34; /* Green shade for headings */
+  }
+  
+  p {
+    color: #4f4f4f; 
+    font-size: 16px;
+  }
+  
+  .dash-data{
+    color: #2e6e34;
+    padding-left:30px ;
+  }
+  .charts{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .chart-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navigation ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .content {
+      padding: 15px;
+    }
+    
+    .dashboard, .summary, .results {
+      width: 90%;
+    }
+  }
+
+  .heading{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+  }

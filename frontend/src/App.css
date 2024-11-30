@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #add8e6;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+#dashboard {
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+#results {
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+#summary {
+  margin-right: auto;
+  text-decoration: none;
+}
